@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+
+	<link rel="stylesheet" href="../css/reset.css">	
+	<link rel="stylesheet" href="../css/university.css">
+	<link rel="stylesheet" href="../css/jquery.bxslider.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			var myslider=$('#slider').bxSlider({
+				pager:false,controls:false,auto:true
+			});
+			$('.prev').click(function(){
+				myslider.goToPrevSlide();
+				return false;
+			});
+			$('.next').click(function(){
+				myslider.goToNextSlide();
+				return false;
+			});
+
+			$('#slidert').bxSlider({
+				auto:true,pager:true,controls:false
+			});
+
+			var j=$('#sliderth').bxSlider({
+				auto:true,pager:false,controls:false
+			});
+
+			$('.thleft').click(function(){
+				j.goToPrevSlide();
+				return false;
+			});
+			$('.thright').click(function(){
+				j.goToNextSlide();
+				return false;
+			});
+
+			var i=$('#sliderf').bxSlider({
+				auto:true,pager:false,mode:'vertical',controls:false
+			});
+			$('.down').click(function(){
+				i.goToPrevSlide();
+				return false;
+			});
+			$('.up').click(function(){
+				i.goToNextSlide();
+				return false;
+			});
+
+		});
+
+	</script>
+	
+
+	<style>
+		.bx-wrapper{box-shadow: none;border:none;}
+		#slider{position: relative;}
+		.next,.prev{position: absolute;width: 50px;height: 100px;cursor: pointer}
+		.next{left:830px;top: 200px;}
+		.prev{left: 0;top: 200px;}
+
+		#slidert{position: relative;}
+		.bg_4 .bx-wrapper .bx-pager{position:absolute;top: 0;padding-left: 350px;}
+		.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #f74237;}
+		
+		
+		.seven>div.bx-wrapper{width: 860px;height: 70px;float: right;}
+		.up,.down{position: absolute;right: 0}
+		.up{top: 0px;}
+		.down{bottom: -5px;}
+		
+	</style>
+
+</head>
+<body>
+	<header id="main_header">
+		<div id="main_gnb_wrap">
+			<div id="main_gnb">
+				<a href="#"><img src="../images-u/plus.png" alt="plus"></a>
+				<ul class="right">
+					<li><a href="#">글자크기</a></li>
+					<li><a href="#">찾아오시는 길</a></li>
+					<li><a href="#">ENGLISH</a></li>
+					<li><a href="#">사이트맵</a></li>					
+				</ul>
+			    <ul class="left">
+					<li><a href="#">대학교</a></li>
+					<li><a href="#">입학안내</a></li>
+					<li><a href="#">대학원</a></li>							
+				</ul>
+			</div>
+		</div>	
+		
+		<div id="sub_gnb_wrap">	
+			<a href="#"><img src="../images-u/title.png" alt="title" class="title"></a>
+			<a href=""><img src="../images-u/toggle.png" alt="toggle" class="toggle"></a>
+			<div id="sub_gnb">
+				<ul>
+					<li><a href="#">대학소개</a></li>
+					<li><a href="#">학과소개</a></li>
+					<li><a href="#">학사안내</a></li>
+					<li><a href="#">대학생활</a></li>
+					<li><a href="#">학생지원센터</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+
+	<section id="bg">
+		
+		<div class="bg_text">
+			<p>함께 나누며 세상을 이끌어</p>
+			<h1>세계로 향햐는 한국대학교</h1>
+			<div class="bg_plus">
+				<li><img src="../images-u/bg1.png" alt=""><a href="#"></a>입학절차안내</li>
+				<li><img src="../images-u/bg2.png" alt=""><a href="#"></a>입학설명회</li>
+				<li><img src="../images-u/bg3.png" alt=""><a href="#"></a>장학제도</li>
+				<li><img src="../images-u/bg4.png" alt=""><a href="#"></a>증명서발급</li>
+			</div>
+		</div>
+			
+		
+		<div class="bg_wrap">
+			
+			<div id="slider">
+				<li>
+					<div>
+						<a href="http://www.naver.com"><img class="dreamt" src="../images-u/dreamt.png"></a>
+						<img src="../images-u/dream-1.png">
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="http://www.naver.com"><img class="dreamt" src="../images-u/dreamt.png"></a>
+						<img src="../images-u/dream-1.png">
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="http://www.naver.com"><img class="dreamt" src="../images-u/dreamt.png"></a>
+						<img src="../images-u/dream-1.png">
+					</div>
+				</li>
+				
+			</div>
+			<div class="next"><a href="javascript:void(0)"><img src="../images-u/next.png" alt="next"></a></div>
+			<div class="prev"><a href="javascript:void(0)"><img src="../images-u/prev.png" alt="prev"></a></div>
+				
+			
+			<div class="bg_right">
+				<a href="http://www.daum.net"><img class="bgt" src="../images-u/bgt.png"></a>
+				<img src="../images-u/bg_right.png">
+			</div>
+		</div>
+		
+		<div class="bg_row">
+			<div class="bg_4 one">
+				<p>HOT LINK</p>
+				<div>
+					<img src="../images-u/hl1.png" alt="">
+					<img src="../images-u/hl2.png" alt="">
+					<img src="../images-u/hl3.png" alt="">
+				</div>
+			</div>
+			<div class="bg_4 two">
+				<div>
+					<h3>공지사항</h3>
+				</div>
+				<table>
+					<tr>
+						<td>-[공지] 한국대학교 웹진 ...</td>
+						<td>2018-06-17</td>
+					</tr>
+					<tr>
+						<td>-[보도] 우수대학교 선정</td>
+						<td>2018-06-17</td>
+					</tr>
+					<tr>
+						<td>-[공지] 대학입시 설명회 </td>
+						<td>2018-06-17</td>
+					</tr>
+					<tr>
+						<td>-[공지] 2016년 1학기 성적 </td>
+						<td>2018-06-17</td>
+					</tr>	
+				</table>
+			</div>
+			<div class="bg_4 three">
+				
+				<div class="text">
+					<h3>SNS NEWS</h3>
+					<img src="../images-u/uni.png" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div>
+						<a href="https://ko-kr.facebook.com/"><img src="../images-u/fb.png" alt=""></a>
+						<a href="https://twitter.com/?lang=ko"><img src="../images-u/tw.png" alt=""></a>
+						<a href="https://www.google.cokr"><img src="../images-u/google.png" alt=""></a>
+						<a href="https://www.youtube.com/"><img src="../images-u/yt.png" alt=""></a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="bg_4 four">
+				<div class="text">캠퍼스투어</div>
+			</div>
+	
+			<div class="bg_4 five">
+				<div>
+					<img src="../images-u/uni2bu.png" alt="">
+				</div>					
+			</div>
+
+			<div class="bg_4 six">
+				
+				<div id="slidert">
+					<li>
+						<div>
+							<a href="http://www.naver.com"><img class="trans" src="../images-u/2017text.png"></a>
+							<img src="../images-u/2017-1.png">
+						</div>
+					</li>
+				    <li>
+						<div>
+							<a href="#"><img class="trans" src="../images-u/2017text.png"></a>
+							<img src="../images-u/2017-1.png">
+						</div>
+				    </li>
+				    <li>
+						<div>
+							<a href="#"><img class="trans" src="../images-u/2017text.png"></a>
+							<img src="../images-u/2017-1.png">
+						</div>
+				    </li>
+				    <li>
+						<div>
+							<a href="#"><img class="trans" src="../images-u/2017text.png"></a>
+							<img src="../images-u/2017-1.png">
+						</div>
+				    </li>
+				</div>
+			
+			</div>
+			
+			<div class="bg_4 seven">
+				<ul class="sright">
+					<li class="stext">학사일정</li>
+					<li>
+						<div id="sliderth">
+							<div>2018  07</div>
+							<div>2018  08</div>
+							<div>2018  09</div>
+						</div>
+						<div class="thleft"><</div>
+						<div class="thright">></div>
+					</li>
+				</ul>
+			
+				<ul id="sliderf">
+					<li>
+						<div><strong>2018-1학기 성적 열람 및 상담 신청</strong></div>
+						<div>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</div>
+					</li>
+					<li>
+						<div><strong>2018-1학기 성적 열람 및 상담 신청</strong></div>
+						<div>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</div>
+					</li>
+					<li>
+						<div><strong>2018-1학기 성적 열람 및 상담 신청</strong></div>
+						<div>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</div>
+					</li>
+				</ul>	
+				<div class="up"><a href="javascript:void(0)"><img src="../images-u/up.png" alt="next"></a></div>
+				<div class="down"><a href="javascript:void(0)"><img src="../images-u/down.png" alt="prev"></a></div>
+			
+			</div>
+		</div>				
+	</section>
+
+
+	<div class="footer">
+		<div class="ftext">
+			<ul>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">한국대학교</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">이용정책</a></li>
+				<li><a href="#">입점/제휴문의 및 광고</a></li>
+				<li><a href="#">이메일 무단수집거부</a></li>
+			</ul>
+
+			<div>대표자 : 홍길동    서울특별시 구로구 구로로 300 (구로동 6가)    사업자등록번화 : 123-56-7890234<br>통신판매업 신고번호 : 제 1234-서울 구로구-1004호    개인정보관리 책임자 : 홍길동    소비자피해보상보험<br>고객센터 : 1234-5678    FAX : 02-1234-5678    HANGUKUNIVERSITY@HANGUK.COM<br><br><strong>COPYRIGHT &copy; HANGUK. ALL RIGHTS RESERVED.</strong></div>
+
+			
+
+		</div>
+	</div>
+
+</body>
+</html>
